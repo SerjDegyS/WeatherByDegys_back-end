@@ -1,29 +1,52 @@
 package com.weatherbydegys.backend.model;
 
-import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
+import org.hibernate.validator.constraints.Length;
 
 import javax.persistence.*;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 import java.time.LocalDateTime;
-import java.util.*;
+import java.util.HashSet;
+import java.util.Objects;
+import java.util.Set;
 
 @Entity
 @Table(name="USERS")
-public class User {
+public class User
+       // implements UserDetails
+       {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "ID", nullable = false)
-    private int id;
+    private long id;
+
     @Column(name = "UID", nullable = true)
     private String uid = "";
+
+    @NotBlank(message = "Username cannot be empty")
     @Column(name = "NAME", nullable = false)
     private String name;
+
+    @Email(message = "Email is not correct")
+    @NotBlank(message = "Email cannot be empty")
     @Column(name = "EMAIL")
     private String email;
-    @Column(name = "PASSWORD")
+
     @Size(min = 6, message = "Minimum 6 symbols")
+//    @NotBlank(message = "Password cannot be empty")
+    @Column(name = "PASSWORD")
     private String password;
 
+//    @Transient
+////    @NotBlank(message = "Password confirmation cannot be empty")
+//    @Size(min = 6, message = "Minimum 6 symbols")
+//    @Column(name = "PASSWORD")
+//    private String password2;
+
+    private boolean active;
+
+    @Length(max = 255, message = "Url to long (more than 255)")
     @Column(name = "PHOTO_URL")
     private String photoURL;
     @Column(name = "LAST_VISIT")
@@ -57,11 +80,11 @@ public class User {
         this.photoURL = photoURL;
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -105,9 +128,17 @@ public class User {
         return uid;
     }
 
-    public String getPassword() {return password; }
+    public boolean isActive() { return active; }
+
+    public void setActive(boolean active) { this.active = active; }
 
     public void setPassword(String password) { this.password = password; }
+
+    public String getPassword() {return password; }
+
+//    public String getPassword2() {return password2; }
+//
+//    public void setPassword2(String password2) { this.password2 = password2; }
 
     public LocalDateTime getLastVisit() { return lastVisit; }
 
@@ -126,6 +157,37 @@ public class User {
     }
 
 
+
+
+//    @Override
+//    public Collection<? extends GrantedAuthority> getAuthorities() {
+//        return getRoles();
+//    }
+//
+//    @Override
+//    public String getUsername() {
+//        return name;
+//    }
+//
+//    @Override
+//    public boolean isAccountNonExpired() {
+//        return true;
+//    }
+//
+//    @Override
+//    public boolean isAccountNonLocked() {
+//        return true;
+//    }
+//
+//    @Override
+//    public boolean isCredentialsNonExpired() {
+//        return true;
+//    }
+//
+//    @Override
+//    public boolean isEnabled() {
+//        return isActive();
+//    }
 
     @Override
     public boolean equals(Object o) {

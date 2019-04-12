@@ -1,10 +1,9 @@
 package com.weatherbydegys.backend.security;
 
 import com.weatherbydegys.backend.model.User;
-import com.weatherbydegys.backend.repos.UserRepo;
-import com.weatherbydegys.backend.service.UserService;
 import com.weatherbydegys.backend.service.UserServiceImp;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.BadCredentialsException;
@@ -12,8 +11,8 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.userdetails.AuthenticationUserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
@@ -29,9 +28,6 @@ public class AuthProviderImpl implements AuthenticationProvider {
     @Lazy
     private PasswordEncoder passwordEncoder;
 
-//    @Autowired
-//    private PasswordEncoder passwordEncoder;
-
     @Override
     public Authentication authenticate(Authentication authentication) throws AuthenticationException {
         String email = authentication.getName();
@@ -41,9 +37,10 @@ public class AuthProviderImpl implements AuthenticationProvider {
         }
         String password = authentication.getCredentials().toString();
         if (!passwordEncoder.matches(password, user.getPassword())){
-            throw new BadCredentialsException("Bad credentials!!!");
+            throw new BadCredentialsException("Bad password!!!");
         }
         List<GrantedAuthority> authorities = new ArrayList<>();
+        authorities.addAll(user.getRoles());
         return new UsernamePasswordAuthenticationToken(user, null, authorities);
     }
 
@@ -51,4 +48,10 @@ public class AuthProviderImpl implements AuthenticationProvider {
     public boolean supports(Class<?> aClass) {
         return aClass.equals(UsernamePasswordAuthenticationToken.class);
     }
+
+    @Bean
+    public PasswordEncoder getPasswordEncoder() {
+        return new BCryptPasswordEncoder(8);
+    }
+
 }

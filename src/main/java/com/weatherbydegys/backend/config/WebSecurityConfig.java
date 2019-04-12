@@ -1,11 +1,14 @@
 package com.weatherbydegys.backend.config;
 
 import com.weatherbydegys.backend.security.AuthProviderImpl;
+import com.weatherbydegys.backend.service.UserService;
+import com.weatherbydegys.backend.service.UserServiceImp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
@@ -16,10 +19,10 @@ import javax.sql.DataSource;
 
 @Configuration
 @EnableWebSecurity
-@ComponentScan("com.weatherbydegys.backend.security")
+//@ComponentScan("com.weatherbydegys.backend.security")
+/* For ADMIN roles */
+@EnableGlobalMethodSecurity(prePostEnabled = true)
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
-//    @Autowired
-//    private DataSource dataSource;
 
     @Autowired
     private AuthProviderImpl authProvider;
@@ -27,19 +30,22 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
+//            .csrf().disable()
             .authorizeRequests()
-                .antMatchers("/").permitAll()
-                .antMatchers("/", "/login", "/registration").anonymous()
-                .antMatchers("/main").authenticated()
+                .antMatchers("/img/**", "/static/**").permitAll()
+                .antMatchers("/", "/login", "/login/process", "/registration").anonymous()
+                .antMatchers( "/main/**", "/api/**").authenticated()
                 .and()
             .formLogin()
                 .loginPage("/login")
                 .loginProcessingUrl("/login/process")
                 .usernameParameter("email")
                 .passwordParameter("password")
-                .defaultSuccessUrl("/main")
-                .failureUrl("/login?error=Bad credential!!!")
-//                .permitAll()
+//                .defaultSuccessUrl("/main")
+                .failureUrl("/login?message=Bad credential!!!")
+                .permitAll()
+                .and()
+             .rememberMe()
                 .and()
             .exceptionHandling()
                 .accessDeniedPage("/main")
@@ -52,15 +58,11 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         auth.authenticationProvider(authProvider);
 
 
+
 //        auth.jdbcAuthentication()
 //                .dataSource(dataSource)
 //                .passwordEncoder(NoOpPasswordEncoder.getInstance())
 //                .usersByUsernameQuery("select email, password, name  from users where email=?")
 //                .authoritiesByUsernameQuery("select u.email, ur.roles from users u inner join user_roles ur on u.id = ur.user_id where u.email=?");
-    }
-
-    @Bean
-    public PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();
     }
 }

@@ -17,7 +17,7 @@ public class MapperFavCityDTO implements Mapper<FavCityDTO, FavCity> {
     @Override
     public FavCity convertToEntity(FavCityDTO dto) {
         FavCity favCity = new FavCity();
-        favCity.setId(Integer.parseInt(dto.getId()));
+        favCity.setId(Long.parseLong(dto.getId()));
         favCity.setName(dto.getName());
         favCity.setCountry(dto.getCountry());
         return favCity;

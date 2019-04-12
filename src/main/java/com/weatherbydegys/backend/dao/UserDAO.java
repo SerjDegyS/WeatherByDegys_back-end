@@ -3,11 +3,14 @@ package com.weatherbydegys.backend.dao;
 //import com.weatherbydegys.backend.model.FavCity;
 import com.weatherbydegys.backend.model.User;
 
+import javax.jws.soap.SOAPBinding;
 import java.util.List;
 
 public interface UserDAO {
-    void add(User user);
+    User add(User user);
+    User getById(long id);
+    List<User> getByName(String name);
     void delete(User user);
-    User findOne(long id);
-    List<User> list();
+    List<User> getAll();
+    User update(User user);
 }

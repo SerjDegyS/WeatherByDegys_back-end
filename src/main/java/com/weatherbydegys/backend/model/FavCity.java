@@ -1,18 +1,20 @@
 package com.weatherbydegys.backend.model;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
 @Entity
-//@Table(name = "FAVCITIES")
+@Table(name = "fav_city")
 public class FavCity {
     @Id
     @NotNull
+    @NotBlank(message = "ID of city cannot be empty")
     @Column(name = "ID", nullable = false)
-    private int id;
+    private Long id;
     @NotNull
     @Column(name = "NAME")
     private String name;
@@ -22,9 +24,9 @@ public class FavCity {
     @ManyToMany(mappedBy = "favCities", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private Set<User> users = new HashSet<>();
 
-    public FavCity() {};
+    public FavCity() {}
 
-    public FavCity(int id, String name, String country) {
+    public FavCity(Long id, String name, String country) {
         this.id = id;
         this.name = name;
         this.country = country;
@@ -38,7 +40,7 @@ public class FavCity {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -78,7 +80,7 @@ public class FavCity {
     public int hashCode() {
         final int prime = 31;
         int result = 1;
-        result = prime * result + id;
+        result = prime * result + Integer.valueOf(id.toString());
         return result;
     }
 
