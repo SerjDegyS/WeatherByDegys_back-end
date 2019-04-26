@@ -20,19 +20,20 @@ public class UserController {
     @Autowired
     private MapperUserDTO mapperUserDTO;
 
-//    @ResponseStatus(HttpStatus.OK)
-//    @GetMapping("/all")
-//    public Iterable<UserDTO> all() {
+    @ResponseStatus(HttpStatus.OK)
+    @GetMapping("/{id}")
+    public UserDTO getOne(@PathVariable("id") String id) {
 //        Iterable<User> allUsers = userService.getAll();
-//
+
 //        List<UserDTO> result = ((List<User>) allUsers).stream()
 //                .map(user -> mapperUserDTO.convertToDTO(user))
 //                .collect(Collectors.toList());
-//
-//        LOGGER.info(allUsers);
-//
-//        return result;
-//    }
+        User user = userService.getById(Long.parseLong(id));
+
+        LOGGER.info(user);
+
+        return mapperUserDTO.convertToDTO(user);
+    }
 
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping("/create")

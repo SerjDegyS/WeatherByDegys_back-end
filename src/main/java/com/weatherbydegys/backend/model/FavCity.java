@@ -2,6 +2,7 @@ package com.weatherbydegys.backend.model;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import java.util.HashSet;
 import java.util.Objects;
@@ -11,14 +12,15 @@ import java.util.Set;
 @Table(name = "fav_city")
 public class FavCity {
     @Id
-    @NotNull
-    @NotBlank(message = "ID of city cannot be empty")
+    @NotNull(message = "ID of city cannot be empty")
     @Column(name = "ID", nullable = false)
     private Long id;
     @NotNull
+    @NotBlank(message = "NAME of city cannot be empty")
     @Column(name = "NAME")
     private String name;
     @NotNull
+    @NotBlank(message = "COUNTRY of city cannot be empty")
     @Column(name = "COUNTRY")
     private String country;
     @ManyToMany(mappedBy = "favCities", fetch = FetchType.LAZY, cascade = CascadeType.ALL)

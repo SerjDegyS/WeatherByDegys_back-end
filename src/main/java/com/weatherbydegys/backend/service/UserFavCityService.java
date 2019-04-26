@@ -42,7 +42,7 @@ public class UserFavCityService implements UserFavCityDAO {
         /*If city doesn't exist in BD*/
         if(newFavCity == null){
             LOGGER.info("City with ID: " + favCity.getId() + "doesn't exist in BD!");
-            throw new IllegalArgumentException("City with ID: " + favCity.getId() + "doesn't exist in BD!");
+            throw new IllegalArgumentException("City with ID: " + favCity.getId() + " doesn't exist in BD!");
         }
 
         /*If user don't has new Favorite City*/

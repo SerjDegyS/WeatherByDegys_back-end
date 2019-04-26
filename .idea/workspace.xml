@@ -2,77 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99b25981-44ec-4c4b-b668-abcc02d2f040" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/api/ControllerUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/city_data_source/ReadJSONCityList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/service/UserFavCityService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/service/storage/FileSystemStorageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/service/storage/StorageException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/service/storage/StorageFileNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/service/storage/StorageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/util/UserEmailValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/DataSource/city.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/common.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/error.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/login.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/register_form.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/userEdit.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/userList.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fa2a3092-b66c-45b0-aae9-30bc0caa422e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fa2a3092-b66c-45b0-aae9-30bc0caa422e.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/config/OAuthSecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/CreetingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/api/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/api/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/api/AuthController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/api/FavCityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/api/FavCityController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/api/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/api/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/config/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/config/MvcConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/config/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/dao/FavCityDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/dao/UserFavCityDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/dao/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/dto/MapperFavCityDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/dto/MapperFavCityDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/dto/MapperUserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/dto/MapperUserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/dto/UserDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/model/FavCity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/model/FavCity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/model/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/repos/FavCityRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/repos/FavCityRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/repos/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/repos/UserRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/security/AuthProviderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/security/AuthProviderImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/service/UserServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/service/UserServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/service/UserFavCityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/service/UserFavCityService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/greeting.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/greeting.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/main.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/main.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/registration.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/registration.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/login.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/login.ftl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/weatherbydegys/backend/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/weatherbydegys/backend/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/weatherbydegys/backend/CreetingController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/weatherbydegys/backend/api/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/weatherbydegys/backend/api/AuthController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/weatherbydegys/backend/api/FavCityController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/weatherbydegys/backend/api/FavCityController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/weatherbydegys/backend/api/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/weatherbydegys/backend/api/UserController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/weatherbydegys/backend/config/MvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/weatherbydegys/backend/config/MvcConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/weatherbydegys/backend/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/weatherbydegys/backend/config/WebSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/weatherbydegys/backend/dao/FavCityDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/weatherbydegys/backend/dao/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/weatherbydegys/backend/dao/UserDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/weatherbydegys/backend/dto/MapperFavCityDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/weatherbydegys/backend/dto/MapperFavCityDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/weatherbydegys/backend/dto/MapperUserDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/weatherbydegys/backend/dto/MapperUserDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/weatherbydegys/backend/dto/UserDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/weatherbydegys/backend/dto/UserDTO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/weatherbydegys/backend/model/FavCity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/weatherbydegys/backend/model/FavCity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/weatherbydegys/backend/model/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/weatherbydegys/backend/model/Role.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/weatherbydegys/backend/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/weatherbydegys/backend/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/weatherbydegys/backend/repos/FavCityRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/weatherbydegys/backend/repos/FavCityRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/weatherbydegys/backend/repos/UserRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/weatherbydegys/backend/repos/UserRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/weatherbydegys/backend/security/AuthProviderImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/weatherbydegys/backend/security/AuthProviderImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/weatherbydegys/backend/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/weatherbydegys/backend/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/weatherbydegys/backend/service/UserServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/weatherbydegys/backend/service/UserServiceImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/greeting.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/main.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/registration.mustache" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -121,8 +67,8 @@
       <file leaf-file-name="WebSecurityConfig.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/config/WebSecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
+            <state relative-caret-position="289">
+              <caret line="45" column="30" lean-forward="true" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -130,24 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/api/MainController.java">
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/api/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="119" column="37" selection-start-line="119" selection-start-column="37" selection-end-line="119" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1872#1888#1" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AuthController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/api/AuthController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="59" selection-start-line="59" selection-end-line="59" />
+            <state relative-caret-position="221">
+              <caret line="25" column="57" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -155,29 +88,57 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="userEdit.ftl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/userEdit.ftl">
+      <file leaf-file-name="FavCityController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/api/FavCityController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+            <state relative-caret-position="136">
+              <caret line="118" column="47" selection-start-line="118" selection-start-column="47" selection-end-line="118" selection-end-column="47" />
+              <folding>
+                <element signature="e#4774#4775#0" expanded="true" />
+                <element signature="e#4810#4811#0" expanded="true" />
+                <element signature="e#4856#4857#0" expanded="true" />
+                <element signature="e#4898#4899#0" expanded="true" />
+                <element signature="e#4936#4937#0" expanded="true" />
+                <element signature="e#4974#4975#0" expanded="true" />
+                <element signature="e#5024#5025#0" expanded="true" />
+                <element signature="e#5070#5071#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register_form.ftl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/parts/register_form.ftl">
+      <file leaf-file-name="FavCityDTO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/dto/FavCityDTO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/model/User.java">
+      <file leaf-file-name="MapperFavCityDTO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/dto/MapperFavCityDTO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+            <state relative-caret-position="277">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserFavCityService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/service/UserFavCityService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-289">
+              <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OAuthSecurityConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/config/OAuthSecurityConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="93">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -207,7 +168,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/city_data_source/ReadJSONCityLict.java" />
         <option value="$PROJECT_DIR$/src/main/resources/DataSource/city.json" />
         <option value="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/CreetingController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/repos/FavCityRepo.java" />
@@ -217,10 +177,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/dao/FavCityDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/service/FavCityService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/dao/UserFavCityDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/service/UserFavCityService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/dto/MapperFavCityDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/city_data_source/ReadJSONCityList.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/parts/common.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/greeting.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/login.mustache" />
@@ -229,35 +187,38 @@
         <option value="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/dto/MapperUserDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/dao/UserDAO.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/parts/common.ftl" />
-        <option value="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/model/FavCity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/api/ControllerUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/api/FavCityController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/util/UserValidator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/service/UserServiceImp.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/login.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/security/AuthProviderImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/Application.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/config/MvcConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/service/StorageService.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/service/FileSystemStorageService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/service/storage/StorageException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/service/storage/StorageFileNotFoundException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/api/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/service/storage/StorageService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/service/storage/FileSystemStorageService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/config/WebSecurityConfig.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/main.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/userList.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/parts/data_input.ftl" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/parts/login.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/parts/error.ftl" />
-        <option value="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/api/AuthController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/registration.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/userEdit.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/api/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/parts/register_form.ftl" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/api/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/parts/login.ftl" />
+        <option value="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/api/AuthController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/config/MvcConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/service/UserFavCityService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/config/OAuthSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/config/WebSecurityConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/model/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/model/FavCity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/api/FavCityController.java" />
       </list>
     </option>
   </component>
@@ -282,10 +243,10 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="width" value="977" />
-    <option name="height" value="1038" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-5" />
+    <option name="width" value="975" />
+    <option name="height" value="1035" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -293,6 +254,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -460,8 +423,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -596,15 +557,26 @@
       <workItem from="1554568112959" duration="3022000" />
       <workItem from="1554633713325" duration="19317000" />
       <workItem from="1554665221183" duration="188000" />
-      <workItem from="1554670291912" duration="58912000" />
+      <workItem from="1554670291912" duration="60157000" />
+      <workItem from="1555444375799" duration="601000" />
+      <workItem from="1556061900080" duration="15313000" />
+      <workItem from="1556215293833" duration="10010000" />
     </task>
+    <task id="LOCAL-00001" summary="v1.2">
+      <created>1555044977982</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1555044977982</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="294152000" />
+    <option name="totallyTimeSpent" value="321321000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="0" width="781" height="830" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -613,24 +585,22 @@
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info id="Capture Tool" order="7" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="bottom" id="Inspection Results" weight="0.3299712" />
-      <window_info anchor="right" id="Database" order="5" sideWeight="0.49530515" weight="0.47295424" />
+      <window_info anchor="right" id="Database" order="5" sideWeight="0.49226806" weight="0.47181207" />
       <window_info id="Structure" order="1" sideWeight="0.50318474" side_tool="true" weight="0.12416107" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24966443" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.55043226" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.54415953" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.32708934" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.32621083" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" x="0" y="0" width="337" height="638" id="Documentation" order="10" sideWeight="0.5046948" side_tool="true" weight="0.47295424" />
       <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39769453" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.44729346" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32905984" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32621083" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4968153" visible="true" weight="0.20249653" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4968153" visible="true" weight="0.103355706" />
       <window_info anchor="right" id="Bean Validation" order="8" weight="0.3295302" />
       <window_info id="Web" order="6" sideWeight="0.5042373" side_tool="true" weight="0.12416107" />
       <window_info anchor="right" id="Theme Preview" order="7" />
@@ -638,10 +608,12 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.32276657" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32853025" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" x="0" y="0" width="337" height="638" id="Documentation" order="10" sideWeight="0.507732" side_tool="true" weight="0.47181207" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24965326" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32853025" />
+      <window_info anchor="bottom" id="Inspection Results" order="14" weight="0.3299712" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -650,12 +622,16 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="v1.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.2" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="12" />
+      <option name="time" value="16" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -663,38 +639,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://fa2a3092-b66c-45b0-aae9-30bc0caa422e/schema/weatherbydegys/table/users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/Specification/FavCitySpecification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/dto/UserDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="58" column="83" selection-start-line="58" selection-start-column="83" selection-end-line="58" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/dto/MapperUserDTO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-149">
           <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/repos/UserRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -747,20 +695,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/model/FavCity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="26" column="23" lean-forward="true" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/api/FavCityController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="91" column="52" lean-forward="true" selection-start-line="91" selection-start-column="52" selection-end-line="91" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/repos/FavCityRepo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -784,9 +718,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload/ cac527c5-783a-43f6-8947-3d61ed40cebc.logo.png">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="das://fa2a3092-b66c-45b0-aae9-30bc0caa422e/schema/weatherbydegys/table/users">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
@@ -823,27 +754,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/DataSource/greeting.ftl">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/config/MvcConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#403#419#1" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -858,12 +772,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-          <folding>
-            <element signature="e#159#160#0" expanded="true" />
-            <element signature="e#179#180#0" expanded="true" />
-            <element signature="e#248#249#0" expanded="true" />
-            <element signature="e#271#272#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -878,19 +786,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#178#179#0" expanded="true" />
-            <element signature="e#208#209#0" expanded="true" />
-            <element signature="e#284#285#0" expanded="true" />
-            <element signature="e#321#322#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="64" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="64" />
         </state>
       </provider>
     </entry>
@@ -908,20 +803,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/service/UserFavCityService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/service/storage/StorageService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -929,17 +814,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="58" column="30" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1116#1138#1" expanded="true" />
-            <element signature="e#2647#2648#0" expanded="true" />
-            <element signature="e#2715#2716#0" expanded="true" />
-          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/greeting.ftl">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/main.ftl">
       <provider selected="true" editor-type-id="text-editor">
@@ -955,54 +831,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/api/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-387">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/api/ControllerUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
           <caret line="16" column="73" lean-forward="true" selection-start-line="16" selection-start-column="73" selection-end-line="16" selection-end-column="73" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/config/WebSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/parts/login.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/parts/error.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="6" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="33" lean-forward="true" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -1010,19 +842,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-          <folding>
-            <element signature="e#96#114#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/api/AuthController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1033,30 +852,181 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/api/MainController.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.34/tomcat-embed-core-8.5.34.jar!/javax/servlet/http/HttpServlet.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="119" column="37" selection-start-line="119" selection-start-column="37" selection-end-line="119" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1872#1888#1" expanded="true" />
-          </folding>
+        <state relative-caret-position="3689">
+          <caret line="233" selection-start-line="233" selection-end-line="233" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/repos/UserRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/parts/error.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/parts/register_form.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="-204">
           <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/parts/login.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="33" lean-forward="true" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="60" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/api/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1547">
+          <caret line="119" column="37" selection-start-line="119" selection-start-column="37" selection-end-line="119" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="70" column="45" lean-forward="true" selection-start-line="70" selection-start-column="45" selection-end-line="70" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/api/AuthController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/config/MvcConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#638#654#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/api/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="25" column="57" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/config/OAuthSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/config/WebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="45" column="30" lean-forward="true" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/dto/FavCityDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/dto/MapperFavCityDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar!/javax/validation/constraints/NotEmpty.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/model/FavCity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
+        <state relative-caret-position="274">
           <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/service/UserFavCityService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-289">
+          <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weatherbydegys/backend/api/FavCityController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="118" column="47" selection-start-line="118" selection-start-column="47" selection-end-line="118" selection-end-column="47" />
+          <folding>
+            <element signature="e#4774#4775#0" expanded="true" />
+            <element signature="e#4810#4811#0" expanded="true" />
+            <element signature="e#4856#4857#0" expanded="true" />
+            <element signature="e#4898#4899#0" expanded="true" />
+            <element signature="e#4936#4937#0" expanded="true" />
+            <element signature="e#4974#4975#0" expanded="true" />
+            <element signature="e#5024#5025#0" expanded="true" />
+            <element signature="e#5070#5071#0" expanded="true" />
           </folding>
         </state>
       </provider>
