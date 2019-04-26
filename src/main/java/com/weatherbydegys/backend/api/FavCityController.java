@@ -8,14 +8,18 @@ import com.weatherbydegys.backend.service.UserFavCityService;
 import com.weatherbydegys.backend.service.UserService;
 import javassist.NotFoundException;
 import org.jboss.logging.Logger;
+import org.json.simple.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.context.annotation.RequestScope;
 
 import javax.validation.Valid;
+import java.io.Serializable;
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -23,7 +27,7 @@ import java.util.stream.Collectors;
 import static com.weatherbydegys.backend.Specification.FavCitySpecification.favCityNameStartBy;
 
 @RestController
-@RequestMapping("/api/favCity")
+@RequestMapping("/api/city")
 public class FavCityController {
     private static final Logger LOGGER = Logger.getLogger(FavCityController.class);
     @Autowired
@@ -38,25 +42,26 @@ public class FavCityController {
     FavCityRepo favCityRepo;
 
     @ResponseStatus(HttpStatus.OK)
-    @PostMapping("/addCityToUser")
-    public List<FavCityDTO> addFavCityToUser(@RequestParam() Long id,
-                                             @Valid FavCityDTO favCity,
+    @PostMapping("/add")
+    public List<FavCityDTO> addFavCityToUser(@RequestParam("user_id") Long userId,
+                                             @RequestBody @Valid FavCity newFavCity,
                                              BindingResult bindingResult) {
 
         if (bindingResult.hasErrors()) {
             Map<String, String> errorsMap = ControllerUtils.getErrors(bindingResult);
+            System.out.println(errorsMap);
+            throw new IllegalArgumentException(errorsMap.toString());
         }else {
-            FavCity newFavCity = mapperFavCityDTO.convertToEntity(favCity);
-            userFavCityService.addFavCityToUser(id, newFavCity);
+                userFavCityService.addFavCityToUser(userId, newFavCity);
         }
-        return userFavCityService.getByUserID(id).stream()
-                    .map(city -> mapperFavCityDTO.convertToDTO(city)).collect(Collectors.toList());
 
+        return userFavCityService.getByUserID(userId).stream()
+                .map(city -> mapperFavCityDTO.convertToDTO(city)).collect(Collectors.toList());
     }
 
     @ResponseStatus(HttpStatus.OK)
-    @GetMapping("/byUserID")
-    public List<FavCityDTO> getByUserID(@RequestParam String userID) {
+    @GetMapping("/get")
+    public List<FavCityDTO> getByUserID(@RequestParam("user_id") String userID) {
         List<FavCity> result = userFavCityService.getByUserID(Long.parseLong(userID));
         return result.stream()
                 .map(favCity -> mapperFavCityDTO.convertToDTO(favCity)).collect(Collectors.toList());
@@ -96,11 +101,40 @@ public class FavCityController {
         return favCityRepo.findAll(favCityNameStartBy(filter));
     }
 
+    @ResponseBody
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    @ExceptionHandler(Exception.class)
+    public FieldErrorDTO errorHandler(Exception exc) {
+        LOGGER.error(exc.getMessage());
+        return new FieldErrorDTO(exc.toString(), exc.getMessage());
+    }
 
 
-//    @ExceptionHandler(Exception.class)
-//    public ResponseEntity<String> errorHandler(Exception exc) {
-//        LOGGER.error(exc.getMessage());
-//        return new ResponseEntity<>(exc.getMessage(), HttpStatus.BAD_REQUEST);
-//    }
+    public class FieldErrorDTO implements Serializable {
+        private LocalDateTime timestap;
+        private String field;
+        private String message;
+
+        public FieldErrorDTO(String field, String message) {
+            this.timestap = new LocalDateTime();
+            this.field = field;
+            this.message = message;
+        }
+
+        public String getField() {
+            return field;
+        }
+
+        public void setField(String field) {
+            this.field = field;
+        }
+
+        public String getMessage() {
+            return message;
+        }
+
+        public void setMessage(String message) {
+            this.message = message;
+        }
+    }
 }
